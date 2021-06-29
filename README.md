@@ -19,10 +19,16 @@ The objective of project is to use Transfer learning for object classification. 
 There are two approaches of transfer learning , Fine Tuning or Retraining and Feature extraction. The approach used for this task is feature extraction, which is simply adding a new output layer, which will be trained from scratch, on top of the pretrained model so that we can repurpose the feature maps learned previously for our dataset and our new output space.
 
 ## VGG19 Model
-The layer of the VGG19 is used for this task. We repurpose the pretrained model based on the requirement of the task. Here the task output is classifying the bees based on subspecies, which is around 7 types. VGG is a deep CNN with 19 layers. This pretrained model uses ImageNet as its dataset. It is consider as good classification architecture which suits this task conveniently.
+The layer of the VGG19 is used for this task. We repurpose the pretrained model based on the requirement of the task. Here the task output is classifying the bees based on subspecies, which is around 7 types. VGG is a deep CNN with 19 layers. This pretrained model uses ImageNet as its dataset. It is consider as good classification architecture which suits this task conveniently. The VGG19 architecture is shown below,
+
+![plot](VGG19.png)
 
 ## Model Evaluation 
 Evaluation of model is a very important part of any deep learning task. Aim is to estimate the generalization accuracy of the model on future data. The evaluation metric used for the task is **F-measure**. F-measure (also F-score) is a measure of a test’s accuracy that considers both the precision and the recall of the test to compute the score. Precision is the number of correct positive results divided by the total predicted positive observations. Recall, on the other hand, is the number of correct positive results divided by the number of all relevant samples (total actual positives).
+![plot](newplot.png)
+
+As we can see from above plot, the loss on training and validation dataset is reducing over the epochs and accuracy is increasing.
+
 ![plot](f-score.png)
 
 From the above displayed score, the prediction results of the test data on the model trained have reached a prediction accuracy of 81.6%.  
