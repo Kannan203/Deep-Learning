@@ -23,6 +23,9 @@ The layer of the VGG19 is used for this task. We repurpose the pretrained model 
 
 ## Model Evaluation 
 Evaluation of model is a very important part of any deep learning task. Aim is to estimate the generalization accuracy of the model on future data. The evaluation metric used for the task is **F-measure**. F-measure (also F-score) is a measure of a test’s accuracy that considers both the precision and the recall of the test to compute the score. Precision is the number of correct positive results divided by the total predicted positive observations. Recall, on the other hand, is the number of correct positive results divided by the number of all relevant samples (total actual positives).
+![plot](f-score.png)
+
+From the above displayed score, the prediction results of the test data on the model trained have reached a prediction accuracy of 81.6%.  
 
 ## Conclusion 
 The score obtained from the test dataset is satisfactory as the VGG19 model was good enough for this classifcation task. For further improvment, this problem can be done with other transfer learning model and their accuracy can be compared. This way , the predictions can be made better.
