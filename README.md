@@ -31,7 +31,7 @@ As we can see from above plot, the loss on training and validation dataset is re
 
 ![plot](f-score.png)
 
-From the above displayed score, the prediction results of the test data on the model trained have reached a prediction accuracy of 81.6%.  
+From the above displayed score, the prediction results of the test data on the model trained have reached a prediction accuracy of 81%.  
 
 ## Conclusion 
 The score obtained from the test dataset is satisfactory as the VGG19 model was good enough for this classifcation task. For further improvment, this problem can be done with other transfer learning model and their accuracy can be compared. This way , the predictions can be made better.
